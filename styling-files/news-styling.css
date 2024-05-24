@@ -1,0 +1,242 @@
+/* ===================== news =================== */
+#news {
+ margin-top: 100px;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 100%;
+ padding: 0 12rem;
+}
+
+#news h1 {
+ padding: 20px;
+ text-align: center;
+}
+
+#news p {
+ margin-top: 50px;
+ text-align: center;
+ padding: 10px;
+ background-color: rgb(243, 239, 239);
+ border-radius: 4px;
+}
+
+#news .container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ width: 100%;
+ padding: 10px 5px 30px;
+}
+
+#news .news-imgs {
+ box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+ padding: 10px;
+ position: relative;
+ margin: 20px 10px;
+}
+
+#news .container .news-imgs img {
+ max-height: 310px;
+}
+
+#news .container .news-imgs .news-imgs-text {
+ right: 0;
+ padding: 10px 5px;
+ bottom: -30px;
+ border-radius: 10px;
+ position: absolute;
+ flex-wrap: wrap;
+ width: 75%;
+ background-color: white;
+}
+
+#news .container .news-imgs .news-imgs-text h6 {
+ color: grey;
+ margin: 10px 10px;
+
+}
+
+.news-btn-div {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+
+.news-btn-div .news-btn {
+ width: 200px;
+ height: 50px;
+ background-color: blue;
+ border-radius: 5px;
+ color: white;
+ border: none;
+ cursor: pointer;
+ transition: background-color .2s ease;
+ margin-top: 50px;
+}
+
+
+.news-btn-div .news-btn:hover {
+ background-color: rgba(0, 0, 255, .5);
+}
+
+
+/* ================== newsletter ============== */
+#newsletter {
+ background-color: rgb(211, 209, 209);
+ /* padding: 50px 20px; */
+ padding: 80px;
+ margin-top: 100px;
+ text-align: center;
+ width: 100%;
+}
+
+#newsletter h6 {
+ text-align: center;
+ color: blue;
+}
+
+.newsletter-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 30px 0;
+ width: 100%;
+}
+
+.newsletter-container input[type=text] {
+ height: 51px;
+ border-radius: 3px;
+ width: 400px;
+ /* border: 3px solid black; */
+ border: none;
+ outline: 3px solid rgb(185, 167, 178);
+ padding-left: 5px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter-container input[type=text]:focus {
+ outline: 3px solid black;
+ ;
+}
+
+#newsletter h1 {
+ text-align: center;
+}
+
+.newsletter-container form button {
+ background-color: black;
+ padding: 16px 20px;
+ color: white;
+ border: none;
+}
+
+
+/* ======================= contact ============== */
+
+#contact {
+ width: 100%;
+ position: relative;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 30px;
+ padding: 20px;
+ background-color: grey;
+}
+
+#contact .container {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+}
+
+#contact .container form {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+#contact .container input[type=text],
+textarea {
+ display: block;
+ margin: 15px 0;
+ border: none;
+ outline: 1px solid rgb(185, 167, 178);
+ padding: 10px;
+ border-radius: 8px;
+ font-family: Arial, Helvetica, sans-serif;
+ width: 500px;
+}
+
+#contact .container input[type=text]:focus,
+textarea:focus {
+ outline: 3px solid black;
+}
+
+#contact .container textarea {
+ padding: 6px;
+ border-radius: 10px;
+}
+
+#contact .container .submit {
+ background-color: black;
+ color: white;
+ border: none;
+ text-align: center;
+ padding: 15px;
+ font-size: 18px;
+ cursor: pointer;
+}
+
+/* ===================== responsive ============ */
+
+@media screen and (max-width: 920px) {
+ #news {
+  padding: 0 10px;
+ }
+
+ #news p {
+  margin-top: 20px;
+ }
+
+ #newsletter {
+  padding: 20px;
+  margin-top: 20px;
+ }
+
+ .newsletter-container input {
+  width: 80%;
+ }
+
+ .newsletter-container form {
+  display: flex;
+ }
+
+ #newsletter .newsletter-container form button {
+  width: auto;
+  font-size: .7rem;
+ }
+
+ #contant {
+  padding: 20px;
+  margin-top: 20px;
+ }
+
+ #contact .container input,
+ Textarea {
+  width: 100%;
+ }
+
+ #contact .container .submit {
+  width: 100%;
+ }
+}

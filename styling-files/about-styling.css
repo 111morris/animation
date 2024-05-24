@@ -1,0 +1,130 @@
+/* ==================== about ==================== */
+#aid106 {
+ padding: 0 12rem;
+ text-align: center;
+ background-color: white;
+ margin-top: 100px;
+ width: 100%;
+}
+
+.a105 {
+ height: auto;
+ overflow: hidden;
+ position: relative;
+}
+
+.a105 img {
+ width: 100%;
+}
+
+.a106 .a105 .a107 {
+ width: 90%;
+ max-width: 600px;
+ margin: auto;
+ height: 15rem;
+ position: absolute;
+ top: 50%;
+ left: 25%;
+ transform: translate(-50%, -50%);
+ background-color: white;
+ padding: 20px;
+ box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+ text-align: center;
+ border: none;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.a106 .a105 .a107 h1 {
+ font-weight: 600;
+ font-size: 2rem;
+}
+
+.a106 .a105 .a107 h1 p {
+ font-size: 1rem;
+}
+
+#about {
+ width: 100%;
+ margin: 70px 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+}
+
+#about .container .our-mission .a102,
+.a104 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 20px;
+ max-width: 100%;
+ margin: 70px 0;
+ flex-wrap: wrap;
+}
+
+#about .container .our-mission .our-mission-clm1,
+#about .container .our-story .a104 .our-story-clm2 {
+ text-align: center;
+ padding: 10px;
+ flex: 1 1 30%;
+}
+
+#about .container .our-story .a103 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 60px;
+ width: 100%;
+}
+
+#about .container .our-mission .our-mission-clm2 img,
+#about .container .our-story .a104 .our-story-clm1 img {
+ border-radius: 20px;
+ max-width: 80%;
+}
+
+/* ============= responsive ============= */
+@media screen and (max-width: 920px) {
+ #aid106 {
+  padding: 0 20px 0;
+ }
+
+ .a106 .a105 .a107 {
+  max-width: 60%;
+  max-height: 50%;
+ }
+
+ .a106 .a105 .a107 h1 {
+  font-size: 1rem;
+ }
+
+ .a106 .a105 .a107 p {
+  font-size: .7rem;
+ }
+
+ #about {
+  padding: 10px;
+ }
+
+ #about .container .our-mission .our-mission-clm1,
+ #about .container .our-story .a104 .our-story-clm2 {
+  flex: 1 1 100%;
+  margin: 10px 0;
+ }
+
+ #about .container .our-mission .our-mission-clm2 img,
+ #about .container .our-story .a104 .our-story-clm1 img {
+  margin: 10px auto;
+ }
+}
+
+@media screen and (min-width: 1120px) {
+ #about .container {
+  flex-direction: row;
+ }
+}

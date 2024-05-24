@@ -1,0 +1,72 @@
+* {
+ font-size: 16px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+ box-sizing: border-box;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.sign-up {
+ width: 360px;
+ background-color: rgb(255, 255, 255);
+ padding: 40px 25px;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.288) 0 6px 24px 0px, rgba(0, 0, 0, 0.438) 0 0 0 1px;
+}
+
+.container {
+ align-items: center;
+}
+
+h2,
+h1 {
+ text-align: center;
+ font-weight: 700;
+ font-style: italic;
+}
+
+p {
+ font-size: 15px;
+ margin: 15px 0px;
+}
+
+
+input[type=text],
+input[type=password] {
+ padding: 8px;
+ margin: 8px;
+ font-size: 17px;
+ border-radius: 4px;
+ border: none;
+ outline: 1px solid rgb(185, 167, 178);
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+ outline: 1px solid black;
+}
+
+
+input[type=submit] {
+ background-image: linear-gradient(to right, rgb(75, 75, 75), rgb(138, 137, 137));
+ height: 38px;
+ border-radius: 20px;
+ border: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=submit] {
+ display: block;
+ margin: 10px 0px;
+ width: 100%;
+}
+
+.register {
+ cursor: pointer;
+}

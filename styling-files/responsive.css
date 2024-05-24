@@ -1,0 +1,72 @@
+@media (max-width: 858px) {
+ header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+ }
+
+ nav {
+  width: 100%;
+ }
+
+ nav .social-icons,
+ .h102,
+ nav ul .h104,
+ nav .nav-links ul a::after {
+  display: none;
+ }
+
+ .brand-title,
+ .toggle-button {
+  display: flex;
+ }
+
+ .nav-links {
+  flex-direction: column;
+  display: block;
+  width: 100%;
+  background-color: #333;
+  color: rgb(241, 237, 237);
+ }
+
+ .navbar-links {
+  justify-content: center;
+  display: none;
+ }
+
+ .nav-links ul {
+  flex-direction: column;
+ }
+
+ .nav-links ul li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .nav-links ul li a {
+  width: 100%;
+  text-align: center;
+  transition: .1s ease;
+ }
+
+ .nav-links ul li a:hover {
+  color: whitesmoke;
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  transform: scaleX(1.2) scaleY(1.2);
+ }
+
+ .nav-links ul,
+ .h106.active {
+  display: flex;
+ }
+
+ .navbar-links.active {
+  display: flex;
+  width: 100%;
+ }
+}
