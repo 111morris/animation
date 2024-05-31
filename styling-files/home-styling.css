@@ -1,4 +1,15 @@
 /* =============== HOME ========== */
+h2 {
+ font-size: 15px;
+}
+
+h1 {
+ font-size: 22px;
+}
+
+h4 {
+ font-size: 14px;
+}
 
 #section-home {
  display: flex;

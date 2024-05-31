@@ -59,15 +59,13 @@
 
 #news .container .news-imgs .news-imgs-text h4 {
  color: blue;
-<<<<<<< HEAD
- margin: 5px 0;
+ <<<<<<< HEAD margin: 5px 0;
 }
 
 #news .container .news-imgs .news-imgs-text h2 {
  color: black;
  margin: 5px 0;
-=======
->>>>>>> d2465f9fcd0a8ff6b5a0022f4e9b106ef69bc501
+ =======>>>>>>>d2465f9fcd0a8ff6b5a0022f4e9b106ef69bc501
 }
 
 #news .container .news-imgs .news-imgs-text h6 {
@@ -229,6 +227,7 @@ textarea:focus {
 @media screen and (max-width: 920px) {
  #news {
   padding: 0 10px;
+  margin: 0;
  }
 
  #news p {
