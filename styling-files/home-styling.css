@@ -1,5 +1,4 @@
 /* =============== HOME ========== */
-main {}
 
 #section-home {
  display: flex;
@@ -28,18 +27,46 @@ main {}
 
 .h106 .home-image .slide-container .slider figure {
  width: 500%;
+ /*future updates*/
  position: relative;
  margin: 0;
  left: 0;
  animation: slider infinite 20s ease;
+ /*future updates*/
 }
 
 .h106 .home-image .slide-container .slider figure img {
  width: 20%;
+ /*future updates*/
  float: left;
  border-radius: 10px;
  filter: grayscale(80%);
 }
+
+/* Adjusted the width of the figure to 600% to accommodate the six images. */
+/* Changed the width of each img to 16.66% (100% divided by 6). */
+/* Modified the @keyframes slider to account for six images, with each step representing the transition between the images. The percentages are adjusted to evenly distribute the animation duration across six images. */
+
+/* ----steps----  */
+/* 1 The total width of the figure element should be 100% * number of images. For N images, the width is N * 100%. */
+/* 2. Each image should have a width of 100% / N. For N images, the width is 100% / N. */
+/* 3. The animation duration should be evenly divided among the images. */
+/* The keyframes should be adjusted such that each image stays on screen for the same amount of time before transitioning to the next image. */
+
+/* Formula: */
+/* For N images: */
+
+/* 1. Figure Width: width: N * 100% */
+/* 2. Image Width: width: 100% / N */
+/* 3. Keyframes: */
+/* -Transition Point: 100% / N */
+/* -Stay Point: 100% / (N * 2) */
+/* Example for 6 Images: */
+/* 1. Figure Width: width: 600% */
+/* 2. Image Width: width: 16.66% */
+/* 3. Keyframes Calculation: */
+/* -Transition Point: 100% / 6 ≈ 16.66% */
+/* -Stay Point: 100% / (6 * 2) ≈ 8.33% */
 
 @keyframes slider {
  0% {
@@ -205,12 +232,15 @@ h2 {
 #bellow .video-samples {
  position: relative;
  margin: 40px 12px;
+ width: 500px;
 }
 
 #bellow .video-samples video {
  filter: grayscale(100%);
  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
  border-radius: 8px;
+ width: 100%;
+ /* width: 500px; */
 }
 
 #bellow .video-samples .bellow-video-text {
@@ -218,17 +248,28 @@ h2 {
  bottom: -30px;
  right: 0;
  width: 75%;
- background-color: white;
+ background-color: rgb(240, 244, 247);
  border: none;
  border-radius: 10px;
  padding: 20px 4px;
  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+ overflow-y: hidden;
+ height: 90px;
+ transition: all 1s ease;
+}
+
+#bellow .video-samples .bellow-video-text:hover {
+ height: auto;
+}
+
+#bellow .video-samples .bellow-video-text h4 {
+ color: blue;
 }
 
 .bellow2 {
  width: 100%;
  height: auto;
- /* background-color: rgb(153, 153, 39); */
+ background-color: rgb(233, 233, 233);
  display: flex;
  flex-direction: column;
 }
@@ -271,9 +312,9 @@ h2 {
  margin: 10px 0 20px;
 }
 
-.big-video1 {
+/* .big-video1 {
  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-}
+} */
 
 .bellow2 .video-samples video {
  filter: grayscale(100%);
@@ -415,11 +456,11 @@ h2 {
 
 @media screen and (max-width: 740px) {}
 
-@media screen and (max-width: 804px) {
+/* @media screen and (max-width: 804px) {
  .bellow2 .h108 {
-  /* height: 510px; */
+  height: 510px;
  }
-}
+} */
 
 @media screen and (width: 1368px) {
  .bellow2 .h108 {
