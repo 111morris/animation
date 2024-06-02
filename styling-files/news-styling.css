@@ -1,6 +1,10 @@
 /* ===================== news =================== */
+#news-1 {
+ width: 100%;
+ padding-top: 150px;
+}
+
 #news {
- margin-top: 100px;
  text-align: center;
  display: flex;
  align-items: center;
@@ -38,6 +42,8 @@
  position: relative;
  margin: 20px;
  background-color: rgba(0, 128, 0, 0.411);
+ border-radius: 10px;
+ border: none;
 }
 
 #news .container .news-imgs img {
@@ -59,13 +65,12 @@
 
 #news .container .news-imgs .news-imgs-text h4 {
  color: blue;
- <<<<<<< HEAD margin: 5px 0;
+ margin: 5px 0;
 }
 
 #news .container .news-imgs .news-imgs-text h2 {
  color: black;
  margin: 5px 0;
- =======>>>>>>>d2465f9fcd0a8ff6b5a0022f4e9b106ef69bc501
 }
 
 #news .container .news-imgs .news-imgs-text h6 {
@@ -159,14 +164,12 @@
 /* ======================= contact ============== */
 
 #contact {
+ padding: 160px 0 0;
  width: 100%;
  position: relative;
  display: flex;
  align-items: center;
  justify-content: center;
- margin-top: 30px;
- padding: 20px;
- background-color: rgb(206, 206, 206);
 }
 
 #contact .container {
@@ -174,6 +177,7 @@
  width: 100%;
  justify-content: center;
  align-items: center;
+ background-color: rgb(206, 206, 206);
  padding: 20px;
 }
 
@@ -223,15 +227,41 @@ textarea:focus {
 }
 
 /* ===================== responsive ============ */
+@media screen and (max-width: 858px) {
+ #contact {
+  padding-top: 61px;
+ }
+}
 
 @media screen and (max-width: 920px) {
  #news {
-  padding: 0 10px;
+  padding: 0;
   margin: 0;
  }
 
  #news p {
-  margin-top: 20px;
+  margin-top: 2px;
+ }
+
+ #news .container {
+  padding: 0;
+  margin: 0 0 50px 0;
+ }
+
+ #news .news-imgs {
+  margin: 20px 0;
+ }
+
+ #news .container .news-imgs .news-imgs-text h2 {
+  margin: 0;
+ }
+
+ #news .container .news-imgs .news-imgs-text h6 {
+  margin: 0;
+ }
+
+ .news-btn-div .news-btn {
+  margin: 0;
  }
 
  #newsletter {

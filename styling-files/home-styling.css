@@ -50,7 +50,7 @@ h4 {
  width: 20%;
  /*future updates*/
  float: left;
- border-radius: 10px;
+ /* border-radius: 10px; */
  filter: grayscale(80%);
 }
 
@@ -150,7 +150,6 @@ h2 {
 
 /* --bouncing arrow-- */
 .bouncing-arrow {
- margin-bottom: 60px;
  display: flex;
  flex-wrap: wrap;
  align-items: center;
@@ -227,15 +226,16 @@ h2 {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
- padding: 0 12rem;
- margin-bottom: 3rem;
+ padding: 150px 10rem 0;
+ width: 100%;
 }
 
 .bellow-container {
  width: 100%;
  height: auto;
  align-items: center;
- justify-content: space-evenly;
+ /* justify-content: space-evenly; */
+ justify-content: center;
  display: flex;
  flex-wrap: wrap;
 }
@@ -247,11 +247,10 @@ h2 {
 }
 
 #bellow .video-samples video {
- filter: grayscale(100%);
+ filter: grayscale(90%);
  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
  border-radius: 8px;
  width: 100%;
- /* width: 500px; */
 }
 
 #bellow .video-samples .bellow-video-text {
@@ -418,7 +417,7 @@ h2 {
   bottom: auto;
   display: block;
   margin: 0;
-  padding-top: 10pxpx;
+  padding-top: 10px;
   width: 100%;
   height: auto;
   margin-top: 20px;
@@ -432,6 +431,10 @@ h2 {
 
  .bouncing-arrow {
   display: none;
+ }
+
+ #bellow {
+  padding: 0 !important;
  }
 
  .bellow-container {
